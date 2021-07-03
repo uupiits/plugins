@@ -107,7 +107,7 @@ public class NightmareHelperPlugin extends Plugin {
         NPC npc = (NPC) actor;
 
         //this will trigger once when the fight begins
-        if (npc.getId() == NpcID.THE_NIGHTMARE_9432) {
+        if (npc.getId() == NpcID.THE_NIGHTMARE_9423) {
             //reset everything
             reset();
             nm = npc;
@@ -173,7 +173,7 @@ public class NightmareHelperPlugin extends Plugin {
         }
 
         //if ID changes to 9431 (3rd phase) and is cursed, remove the curse
-        if (cursed && npc.getId() == NpcID.THE_NIGHTMARE_9431) {
+        if (cursed && npc.getId() == NpcID.THE_NIGHTMARE_9422) {
             cursed = false;
             attacksSinceCurse = -1;
         }
@@ -196,7 +196,7 @@ public class NightmareHelperPlugin extends Plugin {
         }
 
         //if nightmare's id is 9433, the fight has ended and everything should be reset
-        if (nm.getId() == NpcID.THE_NIGHTMARE_9433) {
+        if (nm.getId() == NpcID.THE_NIGHTMARE_377) {
             reset();
         }
         if (swapMage && timeout == 0) {
